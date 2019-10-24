@@ -14,7 +14,12 @@
 
 #HomeButton p {
 	margin-top: 20px;
-	color: black;
+	color: #8B572A;
+	letter-spacing: 3px;
+}
+
+#HomeButton p.hover {
+	text-decoration: none;
 }
 
 #HomeButton {
