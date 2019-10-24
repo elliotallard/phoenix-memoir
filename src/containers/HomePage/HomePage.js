@@ -14,13 +14,12 @@ const homePage = () => {
   return (
     <div className="Home">
       <div className="Banner">
-        {/* <img src={Vader} alt="Vader" /> 
-        <div className="BannerTextContainer">
-          <div className="BannerText">Welcome</div>
-        </div> */}
-        <h1>PHOENIX</h1>
-        <img src={Cactus} alt="Cactus" /> 
-        <br />
+        <div className="row">
+          <img src={Cactus} alt="Cactus" /> 
+          <div class="BannerText"><h1>PHOENIX</h1></div>
+          <img src={Cactus} alt="Cactus" /> 
+        </div>
+        
         <h3> ~ a thank you ~ </h3>
       </div> 
       <br />
