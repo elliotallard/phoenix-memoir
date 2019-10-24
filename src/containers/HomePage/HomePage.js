@@ -24,6 +24,11 @@ const homePage = () => {
       </div> 
       <br />
 
+
+      <div className="scrollBox">
+
+      </div>
+
       <div className="container">
         <h3>
           Star Wars is an American epic space-opera media franchise created by
