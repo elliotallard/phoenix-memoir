@@ -1,0 +1,24 @@
+
+
+
+.sun img {
+	width: 150px;
+	height: 150px;
+}
+
+#HomeButton img {
+	width: 8%;
+	height: 8%;
+	margin: 10px 20px 10px 20px;
+}
+
+#HomeButton p {
+	margin-top: 20px;
+	color: black;
+}
+
+#HomeButton {
+	border: 2px solid grey;
+	border-radius: 10px;
+	background-color: white;
+}
