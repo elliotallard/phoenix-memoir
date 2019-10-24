@@ -1,5 +1,5 @@
 import React from "react";
-// import Vader from "../../assets/imgs/darth-banner.jpg";
+import Cactus from "../../assets/cactus.png";
 // import YouTube from "react-youtube";
 import "./HomePage.css";
 
@@ -19,6 +19,9 @@ const homePage = () => {
           <div className="BannerText">Welcome</div>
         </div> */}
         <h1>PHOENIX</h1>
+        <img src={Cactus} alt="Cactus" /> 
+        <br />
+        <h3> ~ a thank you ~ </h3>
       </div> 
       <br />
 

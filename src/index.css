@@ -1,10 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
-  color: brown;
-  background-color: blue;
+  font-family: 'Courier New', monospace;
+  color: #8B572A;
+  background-color: #aecdf2;
  }
 
+
+h1 {
+	letter-spacing: 5px;
+	font-weight: 0;
+	font-size: 300%;
+}
 
 @font-face {
 	font-family: 'Roboto Mono', monospace;
