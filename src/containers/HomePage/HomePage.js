@@ -2,6 +2,10 @@ import React from "react";
 import Cactus from "../../assets/cactus.png";
 // import YouTube from "react-youtube";
 import "./HomePage.css";
+import Carousel from 'react-bootstrap/Carousel'
+import ImageCarousel from './Carousel.js'
+// import "./flickity.js"
+// import "./flickity.css"
 
 const homePage = () => {
   {/*
@@ -26,7 +30,7 @@ const homePage = () => {
 
 
       <div className="scrollBox">
-
+        <ImageCarousel />
       </div>
 
       <div className="container">

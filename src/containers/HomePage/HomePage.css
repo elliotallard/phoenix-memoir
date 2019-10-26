@@ -32,6 +32,18 @@
   align-items: center;
 }*/
 
+
+
+.scrollBox {
+  height: 50vh;
+}
+
+.scrollBox img {
+  height: 300px;
+  width: 300px;
+}
+
+
 .BannerText {
   font-weight: 600;
   /*font-size: 4rem;*/
