@@ -1,16 +1,28 @@
-import CharK2SO from "../../assets/imgs/char-k2so.jpg";
-import CharC3PO from "../../assets/imgs/char-c3po.jpg";
-import CharRey from "../../assets/imgs/char-rey.jpg";
-import CharFinn from "../../assets/imgs/char-finn.jpg";
-import CharLuke from "../../assets/imgs/char-luke.jpg";
-import CharR2D2 from "../../assets/imgs/char-r2d2.jpg";
-import CharYoda from "../../assets/imgs/char-yoda.jpg";
-import CharChewbacca from "../../assets/imgs/char-chewbacca.jpg";
-import CharObiWan from "../../assets/imgs/char-obiwan.jpg";
-import CharLeia from "../../assets/imgs/char-leia.jpg";
-import CharHanSolo from "../../assets/imgs/char-han-solo.jpg";
-import CharDarthVader from "../../assets/imgs/char-darth-vader.jpg";
+// IMAGES
 
+//CANAL
+import Crack from "../../assets/images/canal/crack.jpg";
+import Filled from "../../assets/images/canal/filled.jpg";
+
+//LIBRARY
+import Book from "../../assets/images/library/book.jpg";
+import Gathering from "../../assets/images/library/gathering.jpg";
+import Tempe from "../../assets/images/library/tempe.jpg";
+
+//PATIO
+import Sunrise1 from "../../assets/images/patio/sunrise1.jpg";
+import Sunrise2 from "../../assets/images/patio/sunrise2.jpg";
+import Sunrise3 from "../../assets/images/patio/sunrise3.jpg";
+
+//POOL
+import PoolDay from "../../assets/images/pool/poolday.jpg";
+import PoolSky from "../../assets/images/pool/poolsky.jpg";
+import PoolTree from "../../assets/images/pool/pooltree.jpg";
+
+//SEVENTH
+import Boots from "../../assets/images/seventh/boots.jpg";
+import Boycott from "../../assets/images/seventh/boycott.jpg";
+import OutSign from "../../assets/images/seventh/outsign.jpg";
 
 
 export default [
@@ -51,7 +63,7 @@ export default [
     rank: 100,
     name: "N Seventh Ave",
     photo: [Boots, Boycott, OutSign],
-    keyline: "A cool spot. Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
+    keyline: "Where all the gay / dive bars were located, and some lovers 💞. Many crawls here, will remember fondly ",
   },
 
 
