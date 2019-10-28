@@ -11,18 +11,50 @@ import CharLeia from "../../assets/imgs/char-leia.jpg";
 import CharHanSolo from "../../assets/imgs/char-han-solo.jpg";
 import CharDarthVader from "../../assets/imgs/char-darth-vader.jpg";
 
+
+
 export default [
   {
-    id: "k2so",
-    rank: 1200,
-    name: "K-2SO",
-    photo: CharK2SO,
-    keyline: "I find that argument vague and unconvincing.",
-    who: [
-      "The lanky, cranky ex-Imperial security droid who helps the Rebels break into the Imperial compound in ‘Rogue One’. Think C-3PO with a bad attitude and verbal diarrhoea (though with the same clipped British accent)."
-    ],
-    why: [
-      "Because he’s the first Star Wars sidekick who’s genuinely funny – K-2’s way with a dry, often unintentional putdown is sardonically hilarious. The design is great, too – he’s all hulking and ungainly, like an overgrown metal teenager."
-    ]
+    id: "pool",
+    rank: 500,
+    name: "The Pool",
+    photo: [PoolDay, PoolSky, PoolTree],
+    keyline: "The hangout. Where we would win(e)(d) down on Wednesdays, eat past-ripe watermelon, and sun while reading, until dizzy",
   },
+
+  {
+    id: "libr",
+    rank: 400,
+    name: "The Tempe Town Library",
+    photo: [Book, Gathering, Tempe],
+    keyline: "Where Sunday afternoons were spent, milling the aisles, picking up entertainment for the next 2 weeks. And hanging with fellow heat-dodgers.",
+  },
+
+  {
+    id: "pati",
+    rank: 300,
+    name: "The Patio",
+    photo: [Sunrise1, Sunrise2, Sunrise3],
+    keyline: "My patio. Here early in the morning, late at night. To enjoy a sunrise, reflect on the week, or be boisterous with guests.",
+  },
+
+  {
+    id: "cana",
+    rank: 200,
+    name: "The Canal Behind My Apt",
+    photo: [Crack, Filled],
+    keyline: "A cool spot. Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
+  },
+
+  {
+    id: "seve",
+    rank: 100,
+    name: "N Seventh Ave",
+    photo: [Boots, Boycott, OutSign],
+    keyline: "A cool spot. Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
+  },
+
+
+
+
 ];
