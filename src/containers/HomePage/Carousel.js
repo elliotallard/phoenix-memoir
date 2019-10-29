@@ -17,39 +17,65 @@ import "./Carousel.css";
 // import appRoutes from "../../shared/appRoutes";
 
 
-let courses = [{GC1}, {GC2}, {GC3}, {GC4}, {GC5}];
+let CourseList = [{GC1}, {GC2}, {GC3}, {GC4}, {GC5}];
 
 
 
 
 
-// class ControlCarousel extends Component {
+{/* class ControlledCarousel extends Component {
   
-//   state = {
-//     places: PlaceList
-//   };
+  state = {
+    places: PlaceList,
+    index: 0,
+    direction: null,
+  };
 
-//   render() {
+  setIndex = (selectedIndex) => {
+    this.setState({
+      index: selectedIndex,
+    })
+  };
 
-//     // const [index, setIndex] = useState(0);
-//     // const [direction, setDirection] = useState(null);
+  setDirection = (eDirection) => {
+    this.setState({
+      direction: eDirection,
+    })
+  };
+ 
+  handleSelect = (selectedIndex, eDirection, e) => {
+    this.setState({
+      index: selectedIndex,
+      direction: eDirection,
+    })
+  };
 
-//     // const handleSelect = (selectedIndex, e) => {
-//     //   setIndex(selectedIndex);
-//     //   setDirection(e.direction);
-//     // };
 
-//     return (
-//       <Item id={this.state.places[0].id} name={this.state.places[0].name} img={GC1}/>
-//     );
-//   }
-// }
+  render() {
+
+    // const [index, setIndex] = useState(0);
+    // const [direction, setDirection] = useState(null);
+
+    // const handleSelect = (selectedIndex, e) => {
+    //   setIndex(selectedIndex);
+    //   setDirection(e.direction);
+    // };
+
+    return (
+      <Carousel activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect(this.state.index), this.state.direction}>
+        <Item id={this.state.places[0].id} name={this.state.places[0].name} img={GC1}/>
+      </Carousel>
+    );
+  }
+} */}
 
 
-const ControlledCarousel = () => {
+const ControlledCarousel = (places, courses) => {
 
-  const places = useState(PlaceList);
-  console.log(places);
+  const [Places, setPlaces] = useState(places);
+  // console.log (cours);
+
+  const[Courses, setCourses] = useState(courses)
 
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
@@ -61,15 +87,34 @@ const ControlledCarousel = () => {
 
   return (
     <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
-      <Item id={PlaceList[0].id} name={PlaceList[0].name} img={GC1} />
-      <Item id={places[0].id} name={places[0].name} img={GC1} />
+      {/*<Carousel.Item>
+         <Route exact path={appRoutes.seventh}> 
+          <img
+            className="d-block w-10"
+            src={GC4}
+            alt="The Patio"
+          />
+          <Carousel.Caption>
+            <h3>My Patio</h3>
+          </Carousel.Caption>
+        {/* </Route> 
+
+      </Carousel.Item>*/}
+      <Item id={PlaceList[0].id} name={PlaceList[0].name} img="../../assets/gcourse1.png" />
+      <Item id={PlaceList[0].id} name={PlaceList[0].name} img={CourseList[1]} />
     </Carousel>
     )
 ;
 }
 
 
+ControlledCarousel.defaultProps = {
+  places: PlaceList,
+  courses: CourseList,
+}
 
 
 
-export default ControlledCarousel
+
+
+export default ControlledCarousel;
