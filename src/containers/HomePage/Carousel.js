@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
-import { withRouter, Switch, Route, Redirect } from "react-router-dom";
+import { withRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
+import appRoutes from "../../shared/appRoutes";
 
 // image imports
 import Cactus from "../../assets/cactus.png";
@@ -28,7 +29,11 @@ const ControlledCarousel = () => {
   return (
     <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+         <Link
+                key="pool"
+                to={`${appRoutes.page}/pool`}
+                className="col-xl-3 col-lg-4 col-md-6 col-sm-12 CharContainer"
+              > 
           <img
             className="d-block w-10"
             src={GC1}
@@ -37,7 +42,7 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>The Pool</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link> 
 
       </Carousel.Item>
 

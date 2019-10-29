@@ -4,7 +4,7 @@ import Cactus from "../../assets/cactus.png";
 import "./HomePage.css";
 import Carousel from 'react-bootstrap/Carousel';
 import ImageCarousel from './Carousel.js';
-// import appRoutes from "../../shared/appRoutes";
+import appRoutes from "../../shared/appRoutes";
 // import "./flickity.js"
 // import "./flickity.css"
 
@@ -31,6 +31,7 @@ const homePage = () => {
 
 
       <div className="scrollBox">
+        
         <ImageCarousel />
       </div>
 
