@@ -1,6 +1,9 @@
 import React, { Component, useState } from "react";
-import { withRouter, Switch, Route, Redirect } from "react-router-dom";
+import { withRouter, Switch, Route, Redirect, Link} from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
+import appRoutes from "../../shared/appRoutes";
+// import Item from './CarouselItem/CarouselItem.js';
+import PlaceList from '../PlacePage/placesList.js';
 
 // image imports
 import Cactus from "../../assets/cactus.png";
@@ -28,7 +31,9 @@ const ControlledCarousel = () => {
   return (
     <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+        <Link key="pool"
+              to={`pool`}
+        >
           <img
             className="d-block w-10"
             src={GC1}
@@ -37,13 +42,15 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>The Pool</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link>
 
       </Carousel.Item>
 
 
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+        <Link key="libr"
+              to={`libr`}
+        >
           <img
             className="d-block w-10"
             src={GC2}
@@ -52,13 +59,15 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>The Tempe Town Library</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link>
 
       </Carousel.Item>
 
 
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+        <Link key="cana"
+              to={`cana`}
+        >
           <img
             className="d-block w-10"
             src={GC3}
@@ -67,14 +76,16 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>The Canal Behind My Apt</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link>
 
       </Carousel.Item>
 
 
 
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+        <Link key="pati"
+              to={`pati`}
+        >
           <img
             className="d-block w-10"
             src={GC4}
@@ -83,14 +94,16 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>My Patio</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link>
 
       </Carousel.Item>
 
 
 
       <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
+        <Link key="seve"
+              to={`seve`}
+        >
           <img
             className="d-block w-10"
             src={GC5}
@@ -99,7 +112,7 @@ const ControlledCarousel = () => {
           <Carousel.Caption>
             <h3>N Seventh St</h3>
           </Carousel.Caption>
-        {/* </Route> */}
+        </Link>
 
       </Carousel.Item>
     </Carousel>

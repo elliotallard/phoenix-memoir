@@ -6,7 +6,7 @@ import NavBar from "./containers/NavBar/NavBar";
 // import Footer from "./containers/Footer/Footer";
 import HomePage from "./containers/HomePage/HomePage";
 // import CharactersPage from "./containers/CharactersPage/CharactersPage";
-// import CharacterPage from "./containers/CharactersPage/CharacterPage/CharacterPage";
+import PlacePage from "./containers/PlacePage/PlacePage";
 import "./App.css";
 
 const app = () => {
@@ -18,6 +18,9 @@ const app = () => {
         <Switch>
           <Route exact path={appRoutes.home}>
             <HomePage />
+          </Route>
+          <Route exact path={appRoutes.places}>
+            <PlacePage />
           </Route>
           {/* <Route exact path={appRoutes.characters}>
             <CharactersPage />
