@@ -2,6 +2,9 @@ import React, { Component, useState } from "react";
 import { withRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import appRoutes from "../../shared/appRoutes";
+import Item from './CarouselItem/CarouselItem.js';
+import PlaceList from '../PlacePage/placesList.js';
+
 
 // image imports
 import Cactus from "../../assets/cactus.png";
@@ -14,10 +17,40 @@ import "./Carousel.css";
 // import appRoutes from "../../shared/appRoutes";
 
 
+let courses = [{GC1}, {GC2}, {GC3}, {GC4}, {GC5}];
 
+
+
+
+
+// class ControlCarousel extends Component {
+  
+//   state = {
+//     places: PlaceList
+//   };
+
+//   render() {
+
+//     // const [index, setIndex] = useState(0);
+//     // const [direction, setDirection] = useState(null);
+
+//     // const handleSelect = (selectedIndex, e) => {
+//     //   setIndex(selectedIndex);
+//     //   setDirection(e.direction);
+//     // };
+
+//     return (
+//       <Item id={this.state.places[0].id} name={this.state.places[0].name} img={GC1}/>
+//     );
+//   }
+// }
 
 
 const ControlledCarousel = () => {
+
+  const places = useState(PlaceList);
+  console.log(places);
+
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 
@@ -28,87 +61,11 @@ const ControlledCarousel = () => {
 
   return (
     <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
-      <Carousel.Item>
-         <Link
-                key="pool"
-                to={`${appRoutes.page}/pool`}
-                className="col-xl-3 col-lg-4 col-md-6 col-sm-12 CharContainer"
-              > 
-          <img
-            className="d-block w-10"
-            src={GC1}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>The Pool</h3>
-          </Carousel.Caption>
-        </Link> 
-
-      </Carousel.Item>
-
-
-      <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
-          <img
-            className="d-block w-10"
-            src={GC2}
-            alt="The Lib"
-          />
-          <Carousel.Caption>
-            <h3>The Tempe Town Library</h3>
-          </Carousel.Caption>
-        {/* </Route> */}
-
-      </Carousel.Item>
-
-
-      <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
-          <img
-            className="d-block w-10"
-            src={GC3}
-            alt="The Canal"
-          />
-          <Carousel.Caption>
-            <h3>The Canal Behind My Apt</h3>
-          </Carousel.Caption>
-        {/* </Route> */}
-
-      </Carousel.Item>
-
-
-
-      <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
-          <img
-            className="d-block w-10"
-            src={GC4}
-            alt="The Patio"
-          />
-          <Carousel.Caption>
-            <h3>My Patio</h3>
-          </Carousel.Caption>
-        {/* </Route> */}
-
-      </Carousel.Item>
-
-
-
-      <Carousel.Item>
-        {/* <Route exact path={appRoutes.seventh}> */}
-          <img
-            className="d-block w-10"
-            src={GC5}
-            alt="seventh"
-          />
-          <Carousel.Caption>
-            <h3>N Seventh St</h3>
-          </Carousel.Caption>
-        {/* </Route> */}
-
-      </Carousel.Item>
+      <Item id={PlaceList[0].id} name={PlaceList[0].name} img={GC1} />
+      <Item id={places[0].id} name={places[0].name} img={GC1} />
     </Carousel>
-  );
+    )
+;
 }
 
 
