@@ -5,6 +5,7 @@ import appRoutes from "./shared/appRoutes";
 import NavBar from "./containers/NavBar/NavBar";
 // import Footer from "./containers/Footer/Footer";
 import HomePage from "./containers/HomePage/HomePage";
+// import AboutPage from "./containers/About/About.js";
 // import CharactersPage from "./containers/CharactersPage/CharactersPage";
 // import CharacterPage from "./containers/CharactersPage/CharacterPage/CharacterPage";
 import "./App.css";
@@ -19,10 +20,10 @@ const app = () => {
           <Route exact path={appRoutes.home}>
             <HomePage />
           </Route>
-          <Route exact path={appRoutes.about}>
+          {/*<Route exact path={appRoutes.about}>
             <AboutPage />
           </Route>
-          {/*<Route exact path={appRoutes.character}>
+          <Route exact path={appRoutes.character}>
             <CharacterPage />
           </Route>
           <Redirect to={appRoutes.home} />*/}
