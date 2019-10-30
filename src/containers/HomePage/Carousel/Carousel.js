@@ -9,15 +9,12 @@ import "./Carousel.css";
 
 
 //IMAGE IMPORTS
-import PlaceList from "../PlacePage/placeList.js"
+import PlaceList from "../../PlacePage/placeList.js"
 
 
 
 
 const items = PlaceList;
-
-
-
 
 
 
@@ -34,7 +31,7 @@ class Slider extends Component {
   };
 
   onExiting() {
-    this.animating = true;
+    this.animating = false;
   };
 
   onExited() {

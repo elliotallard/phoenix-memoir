@@ -1,4 +1,5 @@
 export default {
   home: "/",
-  page: "/:id"
+  page: "/:id",
+  about: "/about"
 };

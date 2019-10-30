@@ -19,10 +19,10 @@ const app = () => {
           <Route exact path={appRoutes.home}>
             <HomePage />
           </Route>
-          {/* <Route exact path={appRoutes.characters}>
-            <CharactersPage />
+          <Route exact path={appRoutes.about}>
+            <AboutPage />
           </Route>
-          <Route exact path={appRoutes.character}>
+          {/*<Route exact path={appRoutes.character}>
             <CharacterPage />
           </Route>
           <Redirect to={appRoutes.home} />*/}
