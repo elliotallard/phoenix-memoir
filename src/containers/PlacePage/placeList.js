@@ -67,7 +67,7 @@ export default [
     name: "The Canal Behind My Apt",
     course: GC5,
     photos: [Crack, Filled],
-    keyline: "A cool spot. Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
+    keyline: "Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
   },
 
   {

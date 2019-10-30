@@ -35,7 +35,7 @@
 
 
 .scrollBox {
-  height: 375px;
+  height: 350px;
 }
 
 
@@ -45,6 +45,22 @@
   /*font-size: 4rem;*/
   margin: 0px 40px 0px 40px;
 }
+
+
+.DownButton p {
+  background-color: #FFFFFF;
+  color: #8B572A;
+  justify-content: center;
+  padding: 5px 40px 5px 40px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+
+
+
 
 .IntroText {
   font-size: 1.2rem;

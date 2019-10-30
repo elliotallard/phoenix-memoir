@@ -36,16 +36,17 @@ const homePage = () => {
 
 
       <div className="container">
-
-      <div className="DownButton">
-        <Link
-                key='about'
-                to="/about"
-              > 
-           
-           <p> About <br/>▼ </p>
-        </Link>
-      </div>
+        <div className="row">
+          <div className="DownButton">
+            <Link
+                    key='about'
+                    to="/about"
+                  > 
+               
+               <p> About <br/>▼ </p>
+            </Link>
+          </div>
+        </div>
       
 
        
