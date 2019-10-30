@@ -76,12 +76,10 @@ class Slider extends Component {
           onExited={this.onExited}
         >
         	<Link
-                key={item.id}
-                to={item.id}
+                to={`/places/${item.id}`}
               > 
 	          <img src={item.course} alt='image of non-descript golf course' />
-	          <CarouselCaption className="text" captionHeader={item.name}
-	          />
+	          <CarouselCaption className="text" captionHeader={item.name} />
 	        </Link>
         </CarouselItem>
       );
