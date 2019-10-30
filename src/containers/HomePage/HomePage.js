@@ -3,7 +3,7 @@ import Cactus from "../../assets/cactus.png";
 // import YouTube from "react-youtube";
 import "./HomePage.css";
 import Carousel from 'react-bootstrap/Carousel';
-import ImageCarousel from './Carousel.js';
+import ImageCarousel from './alternateCarousel.js';
 import appRoutes from "../../shared/appRoutes";
 // import "./flickity.js"
 // import "./flickity.css"

@@ -20,7 +20,7 @@ const item = (props) => {
     <Carousel.Item>
          <Link
                 key={props.id}
-                to={`${appRoutes.page}/{props.id}`}
+                to={props.id}
               > 
           <img
             className="d-block w-10"

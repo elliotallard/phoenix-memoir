@@ -1,8 +1,15 @@
-.carousel-caption h3 {
+.text h3 {
 	color: #8B572A;
 	font-weight: bold;
 
 }
+
+img {
+	height: 70%;
+	width: auto;
+}
+
+
 
 
 
@@ -11,3 +18,4 @@
 	
 
 }
+

@@ -3,7 +3,7 @@ import { withRouter, Switch, Route, Redirect, Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import appRoutes from "../../shared/appRoutes";
 import Item from './CarouselItem/CarouselItem.js';
-import PlaceList from '../PlacePage/placesList.js';
+import PlaceList from '../PlacePage/placeList.js';
 
 
 // image imports
@@ -70,12 +70,7 @@ let CourseList = [{GC1}, {GC2}, {GC3}, {GC4}, {GC5}];
 } */}
 
 
-const ControlledCarousel = (places, courses) => {
-
-  const [Places, setPlaces] = useState(places);
-  // console.log (cours);
-
-  const[Courses, setCourses] = useState(courses)
+const ControlledCarousel = () => {
 
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
@@ -100,13 +95,14 @@ const ControlledCarousel = (places, courses) => {
         {/* </Route> 
 
       </Carousel.Item>*/}
-      <Item id={PlaceList[0].id} name={PlaceList[0].name} img="../../assets/gcourse1.png" />
-      <Item id={PlaceList[0].id} name={PlaceList[0].name} img={CourseList[1]} />
+      <Item id={PlaceList[0].id} name={PlaceList[0].name} img={GC1} />
+      <Item id={PlaceList[1].id} name={PlaceList[1].name} img={CourseList[1]} />
     </Carousel>
-    )
-;
+    );
 }
 
+
+render(<ControlledCarousel />);
 
 ControlledCarousel.defaultProps = {
   places: PlaceList,
