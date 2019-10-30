@@ -4,9 +4,9 @@ import appRoutes from "./shared/appRoutes";
 
 import NavBar from "./containers/NavBar/NavBar";
 // import Footer from "./containers/Footer/Footer";
-import HomePage from "./containers/HomePage/HomePage";
+import HomePage from "./containers/HomePage/HomePage.js";
 // import CharactersPage from "./containers/CharactersPage/CharactersPage";
-import PlacePage from "./containers/PlacePage/PlacePage";
+import PlacePage from "./containers/PlacePage/PlacePage.js";
 import "./App.css";
 
 const app = () => {

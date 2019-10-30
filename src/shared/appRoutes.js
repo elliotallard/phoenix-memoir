@@ -1,4 +1,4 @@
 export default {
   home: "/",
-  places: "/:id"
+  places: "/:id",
 };

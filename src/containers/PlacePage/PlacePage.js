@@ -1,10 +1,13 @@
 import { React } from "react";
 import { useParams } from "react-router";
+// import { useParams } from "react-router-dom";
 import placeList from "./placesList.js";
 import "./PlacePage.css";
 
 const PlacePage = () => {
+  
   const { id } = useParams();
+  console.log(useParams());
   const place = placeList.filter(place => place.id === id)[0];
   const { name, photos, keyline } = place;
 
@@ -29,5 +32,9 @@ const PlacePage = () => {
     </div>
   );
 };
+
+
+
+
 
 export default PlacePage;
