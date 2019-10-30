@@ -21,11 +21,13 @@ const PlacePage = () => {
     <div className="container">
       <br />
       <div className="row">
-        <div className="col-lg-4 col-md-6 col-sm-12">
+        <div className="col-lg-12 col-md-6 col-sm-12">
           <img style={{ width: "100%" }} src={photos[0]} alt={name} />
           <img style={{ width: "100%" }} src={photos[1]} alt={name} />
           <img style={{ width: "100%" }} src={photos[2]} alt={name} />
         </div>
+      </div>
+      <div className="row">
         <div className="col-lg-8 col-md-6 col-sm-12">
           <h1 className="CharacterName">{name}</h1>
           <p className="KeylineContainer">{keyline}</p>
