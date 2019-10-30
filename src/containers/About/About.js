@@ -1,4 +1,4 @@
-import { React, Link } from "react";
+import React, { Link } from "react";
 import Cactus from "../../assets/cactus.png";
 
 import "./About.css";

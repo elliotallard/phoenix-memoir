@@ -1,4 +1,5 @@
-import { React, Link } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import Cactus from "../../assets/cactus.png";
 // import YouTube from "react-youtube";
 import "./HomePage.css";
@@ -9,19 +10,14 @@ import appRoutes from "../../shared/appRoutes";
 // import "./flickity.css"
 
 const homePage = () => {
-  {/*
-  const _onReady = event => {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
-  };
-  */}
+  
 
   return (
     <div className="Home">
       <div className="Banner">
         <div className="row">
           <img src={Cactus} alt="Cactus" /> 
-          <div class="BannerText"><h1>PHOENIX</h1></div>
+          <div><h1>PHOENIX</h1></div>
           <img src={Cactus} alt="Cactus" /> 
         </div>
         
@@ -37,8 +33,18 @@ const homePage = () => {
 
       
 
+
+
       <div className="container">
 
+      <div className="DownButton">
+        <Link
+                key='about'
+                to="/about"
+              > 
+           <p> ▼ </p>
+        </Link>
+      </div>
       
 
         <p className="IntroText">
@@ -57,20 +63,6 @@ const homePage = () => {
         </p>
 
         
-
-        {/*
-        <div className="VideoPlayer">
-          <YouTube
-            videoId="iXDnFYu91vY"
-            opts={{
-              playerVars: {
-                autoplay: 0
-              }
-            }}
-            onReady={_onReady}
-          />
-        </div>
-        */}
       </div>
     </div>
   );
