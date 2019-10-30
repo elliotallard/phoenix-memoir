@@ -7,10 +7,14 @@ import "./PlacePage.css";
 
 const PlacePage = () => {
   
-  const { id } = useParams();
+  const url = window.location.href;
+
+  //gets last part of url, or the id
+  const id = url.substr(url.lastIndexOf('/') + 1)
 
   console.log(id);
   const place = placeList.filter(place => place.id === id)[0];
+  console.log(place);
   const { name, photos, keyline } = place;
 
   return (
@@ -33,6 +37,8 @@ const PlacePage = () => {
       </div>
     </div>
   );
+
+
 };
 
 
