@@ -1,4 +1,5 @@
-import React, { Link } from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import Cactus from "../../assets/cactus.png";
 
 import "./About.css";
@@ -11,7 +12,9 @@ import appRoutes from "../../shared/appRoutes";
 const aboutPage = () => {
 
 	return (
-		<p className="IntroText">
+      
+
+		  <p className="IntroText">
         <b>October 30th, 2019 - </b>
         <br/>
         A nostalgia box, to remember the <i>hottest</i> summer. 
@@ -24,7 +27,7 @@ const aboutPage = () => {
           J., & P.
           
           ❤️ 
-        </p>
+      </p>
        );
 }
 

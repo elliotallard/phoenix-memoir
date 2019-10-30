@@ -42,25 +42,13 @@ const homePage = () => {
                 key='about'
                 to="/about"
               > 
-           <p> ▼ </p>
+           
+           <p> About <br/>▼ </p>
         </Link>
       </div>
       
 
-        <p className="IntroText">
-        <b>October 30th, 2019 - </b>
-        <br/>
-        A nostalgia box, to remember the <i>hottest</i> summer. 
-        <br/><br/>
-        Miss, love, and thank you all - 
-        <br/>
-          
-          M., S., J., M., C., H., J., A., T., K., J., D., C., G.,
-          R., J., P., T., R., T., O., D., D., J., E., D., A., A., R.,
-          J., & P.
-          
-          ❤️ 
-        </p>
+       
 
         
       </div>
