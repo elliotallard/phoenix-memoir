@@ -9,11 +9,6 @@ import "./Carousel.css";
 
 
 //IMAGE IMPORTS
-import GC1 from "../../assets/gcourse1.png";
-import GC2 from "../../assets/gcourse2.png";
-import GC3 from "../../assets/gcourse3.png";
-import GC4 from "../../assets/gcourse4.png";
-import GC5 from "../../assets/gcourse5.png";
 import PlaceList from "../PlacePage/placeList.js"
 
 
@@ -21,7 +16,11 @@ import PlaceList from "../PlacePage/placeList.js"
 
 const items = PlaceList;
 
-const courses = [GC1, GC2, GC3, GC4, GC5]
+
+
+
+
+
 
 class Slider extends Component {
   constructor(props) {
@@ -32,15 +31,15 @@ class Slider extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
-  }
+  };
 
   onExiting() {
     this.animating = true;
-  }
+  };
 
   onExited() {
     this.animating = false;
-  }
+  };
 
   next() {
     if (this.animating) return;
@@ -49,7 +48,7 @@ class Slider extends Component {
         ? 0
         : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
-  }
+  };
 
   previous() {
     if (this.animating) return;
@@ -58,12 +57,14 @@ class Slider extends Component {
         ? items.length - 1
         : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
-  }
+  };
 
   goToIndex(newIndex) {
     if (this.animating) return;
     this.setState({ activeIndex: newIndex });
-  }
+  };
+
+
 
   render() {
     const { activeIndex } = this.state;
@@ -81,7 +82,7 @@ class Slider extends Component {
                 key={item.id}
                 to={item.id}
               > 
-	          <img src={courses[0]} alt='image of non-descript golf course' />
+	          <img src={item.course} alt='image of non-descript golf course' />
 	          <CarouselCaption className="text" captionHeader={item.name}
 	          />
 	        </Link>
