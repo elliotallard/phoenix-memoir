@@ -5,6 +5,8 @@ import { withRouter } from "react-router";
 import placeList from "./placeList.js";
 import "./PlacePage.css";
 
+import Cactus from "../../assets/cactus.png";
+
 const PlacePage = () => {
   
   const url = window.location.href;
@@ -12,24 +14,29 @@ const PlacePage = () => {
   //gets last part of url, or the id
   const id = url.substr(url.lastIndexOf('/') + 1)
 
-  console.log(id);
   const place = placeList.filter(place => place.id === id)[0];
-  console.log(place);
+
   const { name, photos, keyline } = place;
 
   return (
     <div className="container">
       <br />
+      <div className="NameBanner">
+        <div className="row">
+          <img src={Cactus} alt="Cactus" /> 
+          <div><h1>{name}</h1></div>
+          <img src={Cactus} alt="Cactus" /> 
+      </div>
+      </div>
       <div className="row">
-        <div className="col-lg-12 col-md-6 col-sm-12">
-          <img style={{ width: "100%" }} src={photos[0]} alt={name} />
-          <img style={{ width: "100%" }} src={photos[1]} alt={name} />
-          <img style={{ width: "100%" }} src={photos[2]} alt={name} />
+        <div className="gallery col-lg-12 col-md-12 col-sm-12">
+          <img  src={photos[0]} alt={name} />
+          <img  src={photos[1]} alt={name} />
+          <img  src={photos[2]} alt={name} />
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-8 col-md-6 col-sm-12">
-          <h1 className="CharacterName">{name}</h1>
+        <div className="description col-lg-8 col-md-6 col-sm-12">
           <p className="KeylineContainer">{keyline}</p>
           <br />
           <br />

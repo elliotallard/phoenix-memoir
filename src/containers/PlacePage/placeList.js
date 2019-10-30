@@ -76,7 +76,7 @@ export default [
     name: "N Seventh Ave",
     course: GC4,
     photos: [Boots, Boycott, OutSign],
-    keyline: "Where all the gay / dive bars were located, and some lovers 💞. Many crawls here, will remember fondly ",
+    keyline: "Where all the gay / dive bars were located, and lovers 💞. Many crawls here, so fond ",
   },
 
 
