@@ -11,6 +11,7 @@ import GC5 from "../../assets/gcourse5.png";
 //CANAL
 import Crack from "../../assets/images/canal/crack.jpg";
 import Filled from "../../assets/images/canal/filled.jpg";
+import Lake from "../../assets/images/canal/lake.jpg";
 
 //LIBRARY
 import Book from "../../assets/images/library/book.jpg";
@@ -66,7 +67,7 @@ export default [
     rank: 200,
     name: "The Canal Behind My Apt",
     course: GC5,
-    photos: [Crack, Filled],
+    photos: [Lake, Filled, Crack],
     keyline: "Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
   },
 
