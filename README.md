@@ -2,7 +2,7 @@ Take a look at the live version here, hosted by Netlify -
 https://keen-boyd-158c1d.netlify.com/
 
 
-
+And my last citation - Michael Liu, my TA for SSUI, who helped out immensely with this starter code - https://github.com/lxieyang, as well as Josh Kery who helped me when dealing with the hooks API. And the countless stackoverflow posts. <3 
 
 
 
