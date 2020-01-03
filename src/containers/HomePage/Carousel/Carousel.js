@@ -22,7 +22,7 @@ const items = PlaceList;
 class Slider extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeIndex: 0 };
+    this.state = { activeIndex: Math.floor(Math.random() * 5) };
     this.next = this.next.bind(this);
     this.previous = this.previous.bind(this);
     this.goToIndex = this.goToIndex.bind(this);
