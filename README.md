@@ -1,6 +1,9 @@
-Take a look at the live version here, hosted by Netlify - 
-https://keen-boyd-158c1d.netlify.com/
+### Phoenix Memoir
+For the class Software Structures for Usable Interfaces at Carnegie Mellon, I created a simple react app capturing some of the more personal moments I had in Phoenix, Arizona. Building up from hand-drawn mockups to high-fidelity prototypes, the design brings (what I thought would be) a Phoenix color scheme & environment- the pale blue of an ever-sunny sky, Saguaro green, and irrigated golf course green. The pictures were captured in all parts of the summer: from when I was getting to know the city until I had to kiss it goodbye.
 
+
+Take a look at the live version here - 
+https://phoenix-memoir.netlify.com/
 
 And my last citation - Michael Liu, my TA for SSUI, who helped out immensely with this starter code - https://github.com/lxieyang/ssui-simple-react-app, as well as Josh Kery who helped me when dealing with the hooks API. And the countless stackoverflow posts. <3 
 
