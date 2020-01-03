@@ -1,5 +1,5 @@
 ### Phoenix Memoir
-For the class Software Structures for Usable Interfaces at Carnegie Mellon, I created a simple react app capturing some of the more personal moments I had in Phoenix, Arizona. Building up from hand-drawn mockups to high-fidelity prototypes, the design brings (what I thought would be) a Phoenix color scheme & environment- the pale blue of an ever-sunny sky, Saguaro green, and irrigated golf course green. The pictures were captured in all parts of the summer: from when I was getting to know the city until I had to kiss it goodbye.
+For the class Software Structures for Usable Interfaces at Carnegie Mellon, I created a simple react app capturing some of the more personal moments I had in Phoenix, Arizona. Building up from hand-drawn mockups to high-fidelity prototypes, the design brings (what I thought would be) a Phoenix color scheme & environment- the pale blue of an ever-sunny sky, Saguaro green, and irrigated golf course green. The pictures were taken in all parts of the summer: from when I was getting to know the city until I had to kiss it goodbye.
 
 
 Take a look at the live version here - 
