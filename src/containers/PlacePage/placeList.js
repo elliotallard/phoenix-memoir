@@ -41,7 +41,7 @@ export default [
     name: "The Pool",
     course: GC2,
     photos: [PoolDay, PoolSky, PoolTree],
-    keyline: "The hangout. Where we would win(e)(d) down on Wednesdays, eat past-ripe watermelon, and sun while reading, until dizzy",
+    keyline: "The hangout. Where we'd win(e)(d) down on Wednesdays, eat past-ripe watermelon, and sun while reading",
   },
 
   {
@@ -50,7 +50,7 @@ export default [
     name: "The Tempe Town Library",
     course: GC1,
     photos: [Book, Gathering, Tempe],
-    keyline: "Where Sunday afternoons were spent, milling the aisles, picking up entertainment for the next 2 weeks. And hanging with fellow heat-dodgers.",
+    keyline: "Where Sunday afternoons were spent, milling the aisles, picking up entertainment for the next 2 weeks.",
   },
 
   {
@@ -59,7 +59,7 @@ export default [
     name: "The Patio",
     course: GC3,
     photos: [Sunrise1, Sunrise2, Sunrise3],
-    keyline: "My patio. Here early in the morning, late at night. To enjoy a sunrise, reflect on the week, or be boisterous with guests.",
+    keyline: "My patio. Here early in the morning, late at night.",
   },
 
   {
@@ -68,7 +68,7 @@ export default [
     name: "The Canal Behind My Apt",
     course: GC5,
     photos: [Lake, Filled, Crack],
-    keyline: "Would walk / run alongside of it, look in and see various inhabitants. Getting jumped on by dogs, some scratched more than others.",
+    keyline: "Would walk / run alongside of it.",
   },
 
   {
@@ -77,7 +77,7 @@ export default [
     name: "N Seventh Ave",
     course: GC4,
     photos: [Boots, Boycott, OutSign],
-    keyline: "Where all the gay / dive bars were located, and lovers 💞. Many crawls here, so fond ",
+    keyline: "Where all the gay bars were located, and lovers ",
   },
 
 
