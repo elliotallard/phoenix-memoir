@@ -23,7 +23,7 @@ const aboutPage = () => {
               <br/>
               A nostalgia box, to remember the <i>hottest</i> summer. 
               <br/><br/>
-              Miss, love, and thank you all - 
+              Miss, love you all - 
               <br/>
                 
                 M., S., J., M., C., H., J., A., T., K., J., D., C., G.,
