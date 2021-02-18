@@ -50,7 +50,7 @@ export default [
     name: "The Tempe Town Library",
     course: GC1,
     photos: [Book, Gathering, Tempe],
-    keyline: "Where Sunday afternoons were spent, milling the aisles, picking up entertainment for the next 2 weeks.",
+    keyline: "Where Sunday afternoons were spent, milling the aisles",
   },
 
   {
@@ -77,7 +77,7 @@ export default [
     name: "N Seventh Ave",
     course: GC4,
     photos: [Boots, Boycott, OutSign],
-    keyline: "Where all the gay bars were located, and lovers ",
+    keyline: "Where all the gay bars were",
   },
 
 
